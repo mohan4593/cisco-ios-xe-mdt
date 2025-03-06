@@ -58,10 +58,10 @@ telemetry ietf subscription 3304
 telemetry ietf subscription 3305
  encoding encode-kvgpb
  filter xpath /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization
- source-address 172.16.1.193
+ source-address 172.20.0.81
  stream yang-push
  update-policy periodic 3000
- receiver ip address 172.16.1.248 57500 protocol grpc-tcp
+ receiver ip address 172.20.0.11 57500 protocol grpc-tcp
 
 # MAC 
 telemetry ietf subscription 3306
@@ -76,10 +76,10 @@ telemetry ietf subscription 3306
 telemetry ietf subscription 3307
  encoding encode-kvgpb
  filter xpath /memory-ios-xe-oper:memory-statistics/memory-statistic
- source-address 172.16.1.193
+ source-address 172.20.0.81
  stream yang-push
  update-policy periodic 3000
- receiver ip address 172.16.1.248 57500 protocol grpc-tcp
+ receiver ip address 172.20.0.11 57500 protocol grpc-tcp
 
 # POE
 telemetry ietf subscription 3308
@@ -103,10 +103,10 @@ telemetry ietf subscription 3309
 telemetry ietf subscription 3310
  encoding encode-kvgpb
  filter xpath /mdt-oper:mdt-oper-data/mdt-subscriptions
- source-address 172.16.1.193
+ source-address 172.20.0.81
  stream yang-push
  update-policy periodic 3000
- receiver ip address 172.16.1.248 57500 protocol grpc-tcp
+ receiver ip address 172.20.0.11 57500 protocol grpc-tcp
 
 # CDP
 telemetry ietf subscription 3311
@@ -130,19 +130,19 @@ telemetry ietf subscription 3312
 telemetry ietf subscription 3313
  encoding encode-kvgpb
  filter xpath /oc-if:interfaces/interface/state/counters
- source-address 172.16.1.193
+ source-address 172.20.0.81
  stream yang-push
  update-policy periodic 3000
- receiver ip address 172.16.1.248 57500 protocol grpc-tcp
+ receiver ip address 172.20.0.11 57500 protocol grpc-tcp
 
 # Native Interfaces
 telemetry ietf subscription 3314
  encoding encode-kvgpb
  filter xpath /interfaces-ios-xe-oper:interfaces/interface
- source-address 172.16.1.193
+ source-address 172.20.0.81
  stream yang-push
  update-policy periodic 3000
- receiver ip address 172.16.1.248 57500 protocol grpc-tcp
+ receiver ip address 172.20.0.11 57500 protocol grpc-tcp
 
  # IETF Interfaces
 telemetry ietf subscription 3315
